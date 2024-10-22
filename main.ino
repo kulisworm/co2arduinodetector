@@ -20,12 +20,5 @@ void loop() {
    Serial.println("VALUE - " + String(value));
    Serial.println(" ");
    display.showNumberDec(value, false, 3, 0);
-   display.setSegments(value, 1, 3);
-   delay(500);
-
-   // включаем светодиод при превышении определенного значения
-   if (value > 200) { digitalWrite(LED, HIGH); }
-   else { digitalWrite(LED, LOW); }
-
-   delay(200);
+   delay(150);  
 }
